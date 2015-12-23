@@ -48,6 +48,12 @@ public class TestMain {
 	@Test
 	public void test() {
 		
+		Farey farey = new Farey();
+		boolean ret = false;
+		for(int i=0; i<8; i++)
+		{
+			ret = farey.start(i+1);
+		}
 		assertEquals(ret, true);
 	}
 

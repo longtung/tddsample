@@ -6,8 +6,8 @@ Farey sequence
  
 Followings are ouput.
 ----------------------
-Farey[0]: Requested value is 0 or negative.
-Farey[-1]: Requested value is 0 or negative.
+Farey[0]: Requested value is 0 or negative. \n
+Farey[-1]: Requested value is 0 or negative. \n
 Farey[1]: 0  1
 Farey[2]: 0  1/2  1
 Farey[3]: 0  1/3  1/2  2/3  1

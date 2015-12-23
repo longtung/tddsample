@@ -46,15 +46,24 @@ public class TestMain {
 	}
 
 	@Test
-	public void test() {
-		
-		Farey farey = new Farey();
+	public void test_one_to_eight() {
 		boolean ret = false;
 		for(int i=0; i<8; i++)
 		{
-			ret = farey.start(i+1);
+			ret = new Farey().start(i+1);
 		}
+		
 		assertEquals(ret, true);
+	}
+	
+	@Test
+	public void test_zero() {
+		assertEquals(new Farey().start(0), false);
+	}
+	
+	@Test
+	public void test_negative() {
+		assertEquals(new Farey().start(-1), false);
 	}
 
 }
